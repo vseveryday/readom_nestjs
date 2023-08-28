@@ -9,8 +9,6 @@ export class ReverseProxyMiddleware implements NestMiddleware {
     },
     secure: false,
     onProxyReq: (proxyReq, req, res) => {
-      console.log(proxyReq);
-
       console.log(
         `[NestMiddleware]: Proxying ${req.method} request originally made to '${req.originalUrl}'...`,
       );
